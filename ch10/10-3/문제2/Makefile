@@ -1,13 +1,15 @@
-#include "Maxmin.hpp"
-#include <iostream>
-#include <vector>
-using namespace std;
+CX = g++
+CXFLAGS = -g -Wall
+OBJS = main.o Maxmin.o
+TARGET = MMexe
 
-int main() {
-    Maxmin m;
-    vector<int> v;
-    cout << "정수 4개를 입력하시오: ";
-    m.input(v);
-    cout << "최대값은 " << m.findMax(v) <<", 최소값은 " << m.findMin(v)<< "입니다. " << endl;
-    return 0;
-}
+$(TARGET) : $(OBJS)
+	$(CX) -o $(TARGET) $(OBJS)
+main.o : main.cpp Maxmin.hpp
+	$(CX) $(CXFLAGS) -c main.cpp
+Maxmin.o : Maxmin.cpp Maxmin.hpp
+	$(CX) $(CXFLAGS) -c Maxmin.cpp
+
+.PHONY: clean
+clean :
+	rm $(TARGET) $(OBJS)
