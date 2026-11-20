@@ -28,7 +28,8 @@
 
 
 # 실습과제3
-![Uploading image.png…]()
+<img width="494" height="165" alt="image" src="https://github.com/user-attachments/assets/4cfbfdd3-c60d-4116-81c7-cff0ecccb909" />
 
 
 # 실습과제4
+![Uploading image.png…]()
