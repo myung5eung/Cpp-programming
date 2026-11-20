@@ -21,7 +21,9 @@
  end() 함수는 벡터의 마지막 원소 자체가 아니라 마지막 원소의 다음 위치를 가리키는 iterator 객체를 반환
 
 ### Iterator 객체를 이용한 반복문에서 조건문에 `it != v.end();` 대신에 `it <= v.end();`를 쓰면 어떻게 되는가?
+it <= v.end()를 사용하면 it이 v.end()와 같을 때까지 증가하는데, v.end()는 마지막 원소의 다음 위치를 가리키므로 해당 위치를 *it로 접근하면 벡터의 유효한 범위를 벗어나게 되므로 쓰레기 값이 나올 수 있다.
 
+따라서 반복문에서는 it != v.end() 또는 자료에 나온 것처럼 it < v.end()를 사용하여 v.end() 위치에 접근하지 않도록 해야 한다.
 ---
 # 실습과제2
 <img width="549" height="313" alt="image" src="https://github.com/user-attachments/assets/366eac1a-d060-40a2-9fc0-e0143fd9216b" />
