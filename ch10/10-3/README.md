@@ -6,5 +6,10 @@
 ### Iterator 객체를 이용한 반복문에서 조건문에 it != v.end(); 대신에 it<= v.end(); 쓰면 어떻게 되는가?
 ---
 # 실습과제2
+<img width="549" height="313" alt="image" src="https://github.com/user-attachments/assets/366eac1a-d060-40a2-9fc0-e0143fd9216b" />
+
+
 # 실습과제3
+
+
 # 실습과제4
